@@ -165,11 +165,23 @@ body {
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 45vw;
+  height: 12.5rem;
   background-image: url("../img/recepcao.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-width: 426px) {
+  .hero {
+    height: 18.75rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero {
+    height: 25rem;
+  }
 }
 
 .hero::before {
