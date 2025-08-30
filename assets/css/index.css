@@ -1,4 +1,4 @@
-/* Reset e variáveis */
+/* Reset e variáveis - teste live reload */
 * {
   margin: 0;
   padding: 0;
@@ -36,9 +36,9 @@ body {
   background-color: var(--cor-fonte-secundaria);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .header-container {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 /* Logo */
@@ -63,7 +63,7 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav-toggle {
     display: none;
   }
@@ -78,7 +78,7 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hamburguer {
     display: none;
   }
@@ -111,7 +111,7 @@ body {
     transform 0.3s ease;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav-menu {
     overflow: visible;
     flex-direction: row;
@@ -148,7 +148,7 @@ body {
   transition: color 0.3s ease;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav-link {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
   }
@@ -390,7 +390,7 @@ body {
 }
 
 .contact-cta__text {
-  color: #fff;
+  color: #ffffff;
 }
 
 .contact__title {
