@@ -84,6 +84,8 @@
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   margin: 0;
+  aspect-ratio: 16 / 9; /* uniformiza a altura das imagens nos blocos */
+  object-fit: cover;
 }
 
 /* Tabelas das especialidades */
