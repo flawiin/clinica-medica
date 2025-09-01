@@ -90,9 +90,7 @@ body {
   height: 0.125rem;
   margin: 0.1875rem 0;
   background: #fff;
-  transition:
-    transform 0.25s ease,
-    opacity 0.2s ease;
+  transition: transform 0.25s ease, opacity 0.2s ease;
 }
 
 .nav-menu {
@@ -106,9 +104,7 @@ body {
   background: var(--cor-fonte-secundaria);
   max-height: 0;
   transform: translateY(-0.375rem); /* leve subida para animar entrada */
-  transition:
-    max-height 0.3s ease,
-    transform 0.3s ease;
+  transition: max-height 0.3s ease, transform 0.3s ease;
 }
 
 @media (min-width: 769px) {
@@ -345,10 +341,7 @@ body {
 .specialties__img {
   width: 100%;
   display: block;
-  box-shadow:
-    0 -3px 6px rgba(0, 0, 0, 0.1),
-    -4px 0 8px rgba(0, 0, 0, 0.12),
-    4px 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1), -4px 0 8px rgba(0, 0, 0, 0.12), 4px 0 8px rgba(0, 0, 0, 0.12);
 }
 
 .specialties__caption {
@@ -357,10 +350,7 @@ body {
   padding: 8px 0;
   text-transform: uppercase;
   color: var(--cor-fonte-principal);
-  box-shadow:
-    0 0 8px rgba(0, 0, 0, 0.12),
-    -4px 0 8px rgba(0, 0, 0, 0.12),
-    4px 0 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12), -4px 0 8px rgba(0, 0, 0, 0.12), 4px 0 8px rgba(0, 0, 0, 0.12);
 }
 
 .contact-cta {

@@ -3,7 +3,78 @@
   justify-content: center;
   gap: .625rem;
   list-style: none;
-  overflow-x: visible;
+  overflow-x: auto;
+}
+
+/* Navegação superior das especialidades */
+.specialties-nav {
+  padding: 1rem 0 1.25rem 0;
+}
+
+.specialties-nav__link {
+  display: inline-block;
+  padding: .4rem .75rem;
+  border: 2px solid var(--cor-fonte-secundaria);
+  border-radius: 4px;
+  color: var(--cor-fonte-secundaria);
+  background: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+  white-space: nowrap;
+}
+
+.specialties-nav__link:hover,
+.specialties-nav__link:focus-visible {
+  background: var(--cor-fonte-secundaria);
+  color: #fff;
+}
+
+/* Título principal e textos */
+.specialties-page__title {
+  text-align: center;
+  color: var(--cor-fonte-principal);
+  font-size: clamp(1.25rem, 3.2vw, 2rem);
+  font-weight: 600;
+  margin: .5rem 0 1.25rem 0;
+}
+
+.specialty h2 {
+  text-align: center;
+  color: var(--cor-fonte-principal);
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
+  font-weight: 600;
+  margin: 1.25rem 0 .5rem 0;
+}
+
+.specialty p {
+  text-align: center;
+  color: var(--cor-fonte-principal);
+  font-size: clamp(1rem, 3vw, 1.3rem); /* alinha com textos do index */
+  max-width: 75ch;
+  margin: 0 auto .75rem auto;
+}
+
+/* Espaçamento entre os blocos de especialidades */
+.specialty {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .specialty {
+    margin-bottom: 2.75rem;
+  }
+}
+
+/* Respiro lateral geral da página de especialidades (sem gutter interno) */
+.specialties-page {
+  padding-inline: 1rem;
+}
+
+@media (min-width: 768px) {
+  .specialties-page {
+    padding-inline: 2rem;
+  }
 }
 
 .specialty__img {
@@ -54,4 +125,25 @@
 
 .specialty__table tbody tr:nth-child(even) {
   background: #e6e6e6;
+}
+
+/* A partir de 1024px: imagem ao lado da tabela */
+@media (min-width: 1024px) {
+  .specialty__media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow-x: visible;
+  }
+  .specialty__img {
+    min-width: 0; /* libera a largura para caber ao lado */
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 0;
+  }
+  .specialty__table {
+    min-width: 0; /* permite encolher para 50% */
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6px;
+  }
 }
