@@ -1,8 +1,6 @@
 # CMLife – Clínica Médica
 
-![Prévia da Home](assets/img/recepcao.png)
-
-![Prévia de Especialidades](assets/img/fisioterapia.png)
+<img width="1025" height="751" alt="Captura de Tela 2025-09-01 às 18 44 36" src="https://github.com/user-attachments/assets/a2343fbf-f5f9-43e1-9846-1830c285aec5" />
 
 Projeto de site estático e responsivo desenvolvido durante o curso "Carreiras Programador: Crie sites e landing pages" da DevMedia. O objetivo é construir uma landing page de clínica médica com navegação entre páginas e foco em tipografia, componentes reutilizáveis e boas práticas de HTML e CSS.
 
