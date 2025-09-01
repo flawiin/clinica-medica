@@ -1,0 +1,57 @@
+.specialties-nav__list {
+  display: flex;
+  justify-content: center;
+  gap: .625rem;
+  list-style: none;
+  overflow-x: visible;
+}
+
+.specialty__img {
+  width: 100%;
+  min-width: 520px; /* acompanha a largura mínima da tabela */
+  display: block;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin: 0;
+}
+
+/* Tabelas das especialidades */
+.specialty__media {
+  margin-top: 0.75rem;
+  overflow-x: auto; /* suporta telas estreitas */
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  background: #fff;
+}
+
+.specialty__table {
+  width: 100%;
+  min-width: 520px; /* evita quebra em mobile; rola horizontalmente */
+  border-collapse: collapse;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  box-shadow: none; /* sombra já no contêiner */
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.specialty__table thead th {
+  background: var(--cor-fonte-secundaria);
+  color: #fff;
+  text-align: left;
+  padding: 12px 14px;
+  font-weight: 600;
+}
+
+.specialty__table tbody td {
+  padding: 12px 14px;
+  color: var(--cor-fonte-principal);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.specialty__table tbody tr:nth-child(odd) {
+  background: #efefef;
+}
+
+.specialty__table tbody tr:nth-child(even) {
+  background: #e6e6e6;
+}
