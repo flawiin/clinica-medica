@@ -382,10 +382,16 @@ body {
   padding: 0.625rem 1.25rem;
   background-color: var(--cor-fonte-secundaria, #03c9d1);
   text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.contact-cta__text {
-  color: #ffffff;
+.contact-cta__box:hover {
+  filter: brightness(0.9);
 }
 
 .contact__title {
